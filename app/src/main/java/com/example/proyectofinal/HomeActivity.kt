@@ -1,28 +1,83 @@
 package com.example.proyectofinal
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import com.google.firebase.auth.FirebaseAuth
+import android.view.MenuItem
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 enum class ProviderType{
     BASIC
 }
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
+    private lateinit var drawerLayout: DrawerLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_main)
+
+        drawerLayout = findViewById(R.id.drawer_layout)
+
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
+        navigationView.setNavigationItemSelectedListener(this)
+
+        val toggle = ActionBarDrawerToggle(
+            this,
+            drawerLayout,
+            toolbar,
+            R.string.open_nav,
+            R.string.close_nav
+        )
+
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HomeFragment()).commit()
+            navigationView.setCheckedItem(R.id.nav_home)
+        }
+
 
         val bundle = intent.extras
         val email = bundle?.getString("email")
         val provider = bundle?.getString("provider")
-        setup(email?:"",provider?:"")
+
     }
 
-    private fun setup(email : String, provider: String){
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.nav_home -> supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HomeFragment()).commit()
+
+            R.id.nav_settings -> supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, SettingsFragment()).commit()
+
+            R.id.nav_about -> supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, AboutFragment()).commit()
+        }
+        drawerLayout.closeDrawer(GravityCompat.START)
+        return true
+    }
+
+    override fun onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START)
+        } else {
+            onBackPressedDispatcher.onBackPressed()
+        }
+    }
+}
+
+
+    /*private fun setup(email : String, provider: String){
 
         title = "Home"
 
@@ -38,5 +93,10 @@ class HomeActivity : AppCompatActivity() {
             onBackPressed()
         }
 
-    }
-}
+
+val bundle = intent.extras
+val email = bundle?.getString("email")
+val provider = bundle?.getString("provider")
+//setup(email?:"",provider?:"")
+
+   } */
