@@ -14,8 +14,6 @@ class LoginActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
-
         setup()
     }
 
@@ -26,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
         val editEmail : EditText = findViewById(R.id.editEmail)
         val editPass : EditText = findViewById(R.id.editPass)
 
-        title ="Sign Up"
+        title = "Login"
 
         btnSignUp.setOnClickListener{
             if (editEmail.text.isNotEmpty() && editPass.text.isNotEmpty()){

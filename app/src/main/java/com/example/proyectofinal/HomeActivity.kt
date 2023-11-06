@@ -3,11 +3,14 @@ package com.example.proyectofinal
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.FirebaseAuth
 
 enum class ProviderType{
     BASIC
@@ -44,15 +47,12 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 .replace(R.id.fragment_container, HomeFragment()).commit()
             navigationView.setCheckedItem(R.id.nav_home)
         }
-
-
-        val bundle = intent.extras
-        val email = bundle?.getString("email")
-        val provider = bundle?.getString("provider")
-
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        val bundle = intent.extras
+        val email = bundle?.getString("email")
+        val provider = bundle?.getString("provider")
         when (item.itemId) {
             R.id.nav_home -> supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, HomeFragment()).commit()
@@ -62,6 +62,8 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             R.id.nav_about -> supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, AboutFragment()).commit()
+
+            R.id.nav_logout -> setup(email?:"",provider?:"")
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
@@ -74,16 +76,12 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             onBackPressedDispatcher.onBackPressed()
         }
     }
-}
 
-
-    /*private fun setup(email : String, provider: String){
-
-        title = "Home"
-
-        val btnSignOut : Button = findViewById(R.id.btnSignOut)
+    private fun setup(email : String, provider: String){
+        
+        val btnSignOut : Button = findViewById(R.id.nav_logout)
         val textEmail : TextView = findViewById(R.id.textEmail)
-        val textPass : TextView = findViewById(R.id.textPassword)
+        val textPass : TextView = findViewById(R.id.textName)
 
         textEmail.text = email
         textPass.text = provider
@@ -92,11 +90,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
         }
+    }
+}
 
 
-val bundle = intent.extras
-val email = bundle?.getString("email")
-val provider = bundle?.getString("provider")
-//setup(email?:"",provider?:"")
-
-   } */
