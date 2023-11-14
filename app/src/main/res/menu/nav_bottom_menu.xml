@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_news"
+        android:title="@string/tittleNews"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/nav_coupons"
+        android:title="@string/tittleCoupons"
+        android:icon="@drawable/baseline_discount_24"/>
+    <item
+        android:id="@+id/nav_delivery"
+        android:title="@string/tittleOrder"
+        android:icon="@drawable/baseline_restaurant_24"/>
+    <item
+        android:id="@+id/nav_locations"
+        android:title="@string/tittleLocations"
+        android:icon="@drawable/baseline_fastfood_24"/>
+</menu>

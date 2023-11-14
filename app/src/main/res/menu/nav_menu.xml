@@ -2,15 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn = "navigation_view">
-
     <group
         android:checkableBehavior="single">
-
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/baseline_home_24"
+            android:icon="@drawable/baseline_home_red"
             android:title="Home"/>
-
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/baseline_settings_24"
@@ -22,19 +19,13 @@
             android:title="About us"/>
 
     </group>
-
     <item
         android:title="">
-
         <menu>
-
             <item
                 android:id="@+id/nav_logout"
                 android:icon="@drawable/baseline_logout_24"
                 android:title="Logout"/>
-
         </menu>
-
     </item>
-
 </menu>

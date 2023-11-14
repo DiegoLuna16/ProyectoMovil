@@ -9,7 +9,7 @@
     android:background="@drawable/bck_red">
 
     <ImageView
-
+        android:id="@+id/imgProfile"
         android:layout_width="137dp"
         android:layout_height="146dp"
         android:src="@drawable/icon_pollo_modified" />

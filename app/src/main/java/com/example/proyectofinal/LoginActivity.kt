@@ -5,28 +5,33 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
-
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         setup()
-    }
 
+        val textSignUp : TextView = findViewById(R.id.textSignUp)
+
+        textSignUp.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
+    }
     private fun setup(){
 
-        val btnSignUp : Button = findViewById(R.id.btnSignUp)
-        val btnLogIn : Button = findViewById(R.id.btnLogin)
+        val textSignUp : TextView = findViewById(R.id.textSignUp)
+        val btnLogIn : Button = findViewById(R.id.btnLogIn)
         val editEmail : EditText = findViewById(R.id.editEmail)
         val editPass : EditText = findViewById(R.id.editPass)
 
         title = "Login"
 
-        btnSignUp.setOnClickListener{
+        textSignUp.setOnClickListener{
             if (editEmail.text.isNotEmpty() && editPass.text.isNotEmpty()){
                 FirebaseAuth.getInstance()
                     .createUserWithEmailAndPassword(editEmail.text.toString(),
