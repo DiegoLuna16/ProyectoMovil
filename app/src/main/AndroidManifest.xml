@@ -13,13 +13,19 @@
         android:theme="@style/Theme.ProyectoFinal"
         tools:targetApi="31">
         <activity
+            android:name=".DetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoFinal"/>
+        <activity
             android:name=".SignUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.HomeActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoFinal"/>
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
             android:exported="true"
             android:theme="@style/Theme.HomeActivity">
             <intent-filter>

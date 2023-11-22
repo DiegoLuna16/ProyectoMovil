@@ -1,14 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".NewsFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            android:autoStart="true"
+            android:flipInterval="2000"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right">
+
+            <ImageView
+                android:layout_width="348dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:src="@drawable/promo1" />
+
+            <ImageView
+                android:layout_width="348dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:src="@drawable/promo2" />
+
+            <ImageView
+                android:layout_width="348dp"
+                android:layout_height="340dp"
+                android:layout_gravity="center"
+                android:src="@drawable/promo3" />
+
+            <ImageView
+                android:layout_width="348dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:src="@drawable/prom4" />
+
+            <ImageView
+                android:layout_width="348dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:src="@drawable/promo5" />
+
+            <ImageView
+                android:layout_width="348dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:src="@drawable/promo6" />
+
+        </ViewFlipper>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Come and get the new Disney Toys!"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="12dp"/>
+
+        <ImageView
+            android:layout_width="348dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:src="@drawable/toys" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Try the new flavor!"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="12dp"/>
+
+        <ImageView
+            android:layout_width="348dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dessert" />
+
+    </LinearLayout>
+
+</ScrollView>
