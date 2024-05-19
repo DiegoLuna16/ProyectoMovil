@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,7 +20,6 @@
             android:textColor="@color/black"
             android:padding="15dp"
             />
-
 
         <ViewFlipper
             android:layout_width="match_parent"
@@ -72,7 +70,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Come and get the new Disney Toys!"
+            android:text="Ven y obten los nuevos juguetes!"
             android:textStyle="bold"
             android:textSize="20sp"
             android:textColor="@color/black"
@@ -88,7 +86,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Try the new flavor!"
+            android:text="Prueba el nuevo sabor!"
             android:textStyle="bold"
             android:textSize="20sp"
             android:textColor="@color/black"

@@ -1,0 +1,61 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="16dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textCardLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sucursal_plaza_andina"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textCardAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/direccion_plaza_andina"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textCardState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/estado_plaza_andina"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/textCardDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distancia_plaza_andina"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/walking"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

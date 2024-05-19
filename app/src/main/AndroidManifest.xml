@@ -13,21 +13,33 @@
         android:theme="@style/Theme.ProyectoFinal"
         tools:targetApi="31">
         <activity
+            android:name=".MyReservationsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ReservationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".DetailActivity"
             android:exported="false"
-            android:theme="@style/Theme.ProyectoFinal"/>
+            android:theme="@style/Theme.ProyectoFinal"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SignUpActivity"
             android:exported="false"
-            android:theme="@style/Theme.HomeActivity"/>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.ProyectoFinal"/>
+            android:theme="@style/Theme.HomeActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoFinal"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.HomeActivity">
+            android:theme="@style/Theme.HomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

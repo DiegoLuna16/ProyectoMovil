@@ -61,14 +61,7 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
 
-    /*private fun showSettings(name: String, email: String) {
-        val mainIntent = Intent(this,MainActivity::class.java).apply {
-                putExtra("name", name)
-                putExtra("email", email)
 
-        }
-        startActivity(mainIntent)
-    }*/
 
 // Other alert functions (showAlert, showPasswordMismatchAlert, showEmptyFieldsAlert)
 

@@ -3,11 +3,8 @@ package com.example.proyectofinal
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toolbar
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.auth.FirebaseAuth
@@ -25,11 +22,9 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
     }
     private fun setup(){
-        val btnLogIn : MaterialButton = findViewById(R.id.btnLogIn)
+        val btnLogIn : MaterialButton = findViewById(R.id.btnHome)
         val editEmail : EditText = findViewById(R.id.editEmail)
         val editName: EditText = findViewById(R.id.editName)
         val editPass : EditText = findViewById(R.id.editPass)

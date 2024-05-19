@@ -136,5 +136,76 @@
     <string name="sprite_price">$33.00</string>
     <string name="pepeluche_price">$136.00</string>
 
+    <string name="sucursal_plaza_andina">Plaza Andina</string>
+    <string name="sucursal_bahia_gastronomica">Bahía Gastronómica</string>
+    <string name="sucursal_pueblo_mediterraneo">Pueblo Mediterráneo</string>
+    <string name="sucursal_callejon_toscana">Callejón Toscana</string>
+    <string name="sucursal_rinconcito_caribeno">Rinconcito Caribeño</string>
+    <string name="sucursal_aldea_oriental">Aldea Oriental</string>
+    <string name="sucursal_avenida_iberica">Avenida Ibérica</string>
+    <string name="sucursal_barrio_gastronomico">Barrio Gastronómico</string>
+    <string name="sucursal_costanera_sabores">Costanera Sabores</string>
+    <string name="sucursal_esquina_bohemia">Esquina Bohemia</string>
+
+    <string name="direccion_plaza_andina">Calle 5 de Mayo #123, Col. Andina</string>
+    <string name="direccion_bahia_gastronomica">Av. del Mar #456, Playa Paraíso</string>
+    <string name="direccion_pueblo_mediterraneo">Calle Olivo #789, Pueblo Mediterráneo</string>
+    <string name="direccion_callejon_toscana">Carrer Tosca #234, Carrer de Sant Martí</string>
+    <string name="direccion_rinconcito_caribeno">Calle Palma #567, Rinconcito Caribeño</string>
+    <string name="direccion_aldea_oriental">Rua Oriental #890, Aldea Oriental</string>
+    <string name="direccion_avenida_iberica">Avinguda Ibèrica #123, Barri Gòtic</string>
+    <string name="direccion_barrio_gastronomico">Rua Gastronômica #456, Bairro Alto</string>
+    <string name="direccion_costanera_sabores">Av. Costanera #789, Barrio Sabores</string>
+    <string name="direccion_esquina_bohemia">Calle Bohemia #234, Esquina Bohemia</string>
+
+    <string name="estado_plaza_andina"> Ciudad de México</string>
+    <string name="estado_bahia_gastronomica"> Cancún</string>
+    <string name="estado_pueblo_mediterraneo"> Barcelona</string>
+    <string name="estado_callejon_toscana"> Florencia</string>
+    <string name="estado_rinconcito_caribeno"> Santo Domingo</string>
+    <string name="estado_aldea_oriental"> Lisboa</string>
+    <string name="estado_avenida_iberica"> Barcelona</string>
+    <string name="estado_barrio_gastronomico"> Lisboa</string>
+    <string name="estado_costanera_sabores"> Buenos Aires</string>
+    <string name="estado_esquina_bohemia"> Praga</string>
+
+    <string name="distancia_plaza_andina">10km</string>
+    <string name="distancia_bahia_gastronomica">5km</string>
+    <string name="distancia_pueblo_mediterraneo">15km</string>
+    <string name="distancia_callejon_toscana">8km</string>
+    <string name="distancia_rinconcito_caribeno">12km</string>
+    <string name="distancia_aldea_oriental">7km</string>
+    <string name="distancia_avenida_iberica">3km</string>
+    <string name="distancia_barrio_gastronomico">6km</string>
+    <string name="distancia_costanera_sabores">9km</string>
+    <string name="distancia_esquina_bohemia">4km</string>
+
+    <string-array name="mesasArray">
+        <item>1 persona</item>
+        <item>2 personas</item>
+        <item>3 personas</item>
+        <item>4 personas</item>
+        <item>5 personas</item>
+        <item>6 personas</item>
+        <item>7 personas</item>
+        <item>8 personas</item>
+        <item>9 personas</item>
+        <item>10 o más personas</item>
+    </string-array>
+
+    <string-array name="sucursalesArray">
+        <item>Plaza Andina</item>
+        <item>Bahía Gastronómica</item>
+        <item>Pueblo Mediterráneo</item>
+        <item>Callejón Toscana</item>
+        <item>Rinconcito Caribeño</item>
+        <item>Aldea Oriental</item>
+        <item>Avenida Ibérica</item>
+        <item>Barrio Gastronómico</item>
+        <item>Costanera Sabores</item>
+        <item>Esquina Bohemia</item>
+    </string-array>
+
+
 
 </resources>

@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             R.id.nav_home -> {
                 replaceFragment(HomeFragment())
             }
-            R.id.nav_settings -> {
+            R.id.nav_reservations -> {
                 replaceFragment(SettingsFragment())
             }
             R.id.nav_about -> {
