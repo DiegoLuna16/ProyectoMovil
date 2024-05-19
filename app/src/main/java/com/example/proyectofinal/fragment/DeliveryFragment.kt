@@ -1,4 +1,4 @@
-package com.example.proyectofinal
+package com.example.proyectofinal.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.proyectofinal.Food
-import com.example.proyectofinal.FoodAdapter
+import com.example.proyectofinal.activies.DetailActivity
+import com.example.proyectofinal.models.Food
+import com.example.proyectofinal.adapters.FoodAdapter
 import com.example.proyectofinal.R
 
 class DeliveryFragment : Fragment() {

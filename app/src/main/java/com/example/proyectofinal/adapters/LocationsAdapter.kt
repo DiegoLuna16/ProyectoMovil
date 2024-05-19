@@ -1,10 +1,13 @@
-package com.example.proyectofinal
+package com.example.proyectofinal.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.proyectofinal.R
+import com.example.proyectofinal.models.Locations
+
 class LocationsAdapter (private val locationList:ArrayList<Locations>)
     : RecyclerView.Adapter<LocationsAdapter.LocationsViewHolder>(){
 

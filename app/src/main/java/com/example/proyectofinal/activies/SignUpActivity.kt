@@ -1,12 +1,12 @@
-package com.example.proyectofinal
+package com.example.proyectofinal.activies
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import com.example.proyectofinal.R
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.auth.FirebaseAuth
 

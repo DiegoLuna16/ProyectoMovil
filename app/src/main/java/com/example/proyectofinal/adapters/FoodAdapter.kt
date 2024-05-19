@@ -1,4 +1,4 @@
-package com.example.proyectofinal
+package com.example.proyectofinal.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.proyectofinal.R
+import com.example.proyectofinal.models.Food
 
 class FoodAdapter(private val foodList:ArrayList<Food>)
     : RecyclerView.Adapter<FoodAdapter.FoodViewHolder>(){

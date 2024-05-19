@@ -1,25 +1,24 @@
-package com.example.proyectofinal
+package com.example.proyectofinal.activies
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.View
-import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.findViewTreeViewModelStoreOwner
+import com.example.proyectofinal.R
+import com.example.proyectofinal.fragment.AboutFragment
+import com.example.proyectofinal.fragment.HomeFragment
+import com.example.proyectofinal.fragment.SettingsFragment
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 
-
-class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private val onBackPressedCallback = object : OnBackPressedCallback(true){
         override fun handleOnBackPressed() {
             onBackPressedMethod()
@@ -104,5 +103,3 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         return true
     }
 }
-
-

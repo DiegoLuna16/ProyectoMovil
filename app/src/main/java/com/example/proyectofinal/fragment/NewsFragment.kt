@@ -1,4 +1,4 @@
-package com.example.proyectofinal
+package com.example.proyectofinal.fragment
 
 import android.net.Uri
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.MediaController
 import android.widget.Toast
 import android.widget.VideoView
+import com.example.proyectofinal.R
 
 class NewsFragment : Fragment() {
 
@@ -49,7 +50,6 @@ class NewsFragment : Fragment() {
         myVideoView!!.start() // Puedes iniciar el video automáticamente si deseas
 
         myVideoView!!.setOnCompletionListener {
-            Toast.makeText(context, "Video Completed", Toast.LENGTH_SHORT).show()
         }
 
         myVideoView!!.setOnErrorListener { mp, what, extra ->

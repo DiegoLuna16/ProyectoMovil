@@ -1,15 +1,16 @@
-package com.example.proyectofinal
+package com.example.proyectofinal.activies
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.proyectofinal.R
 import com.google.android.material.button.MaterialButton
 import java.util.Calendar
 
@@ -104,7 +105,11 @@ class ReservationActivity : AppCompatActivity() {
                 scheduledTime.setText(formattedTime)
             } else {
                 // Hora seleccionada fuera del rango permitido, mostrar mensaje o tomar alguna acción
-                Toast.makeText(this, "Por favor selecciona una hora entre 13:00 y 22:00", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "Por favor selecciona una hora entre 13:00 y 22:00",
+                    Toast.LENGTH_SHORT
+                ).show()
                 // También podrías reiniciar la selección o tomar otra acción según tu flujo
             }
         }, hourOfDay, minute, true) // true para usar formato de 24 horas
@@ -114,7 +119,7 @@ class ReservationActivity : AppCompatActivity() {
 
 
     private fun showConfirmation(name: String,day: String, time : String) {
-        val mainIntent = Intent(this,MyReservationsActivity::class.java).apply {
+        val mainIntent = Intent(this, MyReservationsActivity::class.java).apply {
             putExtra("name", name)
             putExtra("day", day)
             putExtra("time", time)

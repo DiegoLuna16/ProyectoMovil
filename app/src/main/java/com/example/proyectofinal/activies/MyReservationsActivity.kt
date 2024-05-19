@@ -1,9 +1,10 @@
-package com.example.proyectofinal
+package com.example.proyectofinal.activies
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.example.proyectofinal.R
 import com.google.android.material.button.MaterialButton
 
 class MyReservationsActivity : AppCompatActivity() {
@@ -26,11 +27,10 @@ class MyReservationsActivity : AppCompatActivity() {
         val btnHome = findViewById<MaterialButton>(R.id.btnHome)
 
         btnHome.setOnClickListener{
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
 
 
 }
-

@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeFragment">
+    tools:context=".fragment.HomeFragment">
 
         <FrameLayout
             android:id="@+id/bottomFragment"
             android:layout_width="match_parent"
-            android:layout_height="720dp"/>
+            android:layout_height="wrap_content"/>
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomAppBar"

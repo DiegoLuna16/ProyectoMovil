@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".CouponsFragment">
+    tools:context=".fragment.CouponsFragment">
 
     <TextView
         android:id="@+id/couponsTitle"
@@ -34,26 +34,26 @@
                 android:id="@+id/cardCoupon1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="10dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:padding="5dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pollo_back"/>
+                        android:src="@drawable/pollo_back" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -62,7 +62,8 @@
                         android:text="Medio Pollo + 5 tacos de pollo"
                         android:textColor="#370101"
                         android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -70,6 +71,7 @@
                         android:text="Ilimitado"
                         android:textColor="#240000"
                         android:textSize="17sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -80,30 +82,31 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardCoupon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="10dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:padding="5dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pollo_back"/>
+                        android:src="@drawable/pollo_back" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -112,7 +115,8 @@
                         android:text="Pollo completo + 2 complementos"
                         android:textColor="#370101"
                         android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -120,6 +124,7 @@
                         android:text="Ilimitado"
                         android:textColor="#240000"
                         android:textSize="17sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -130,30 +135,31 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardCoupon3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="10dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:padding="5dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pollo_back"/>
+                        android:src="@drawable/pollo_back" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -162,7 +168,8 @@
                         android:text="Platillo de pollo + papas a la francesa"
                         android:textColor="#370101"
                         android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -170,6 +177,7 @@
                         android:text="Ilimitado"
                         android:textColor="#240000"
                         android:textSize="17sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -180,30 +188,31 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardCoupon4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="10dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:padding="5dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pollo_back"/>
+                        android:src="@drawable/pollo_back" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -212,7 +221,8 @@
                         android:text="Pollo y medio + 3 complementos"
                         android:textColor="#370101"
                         android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -220,6 +230,7 @@
                         android:text="Ilimitado"
                         android:textColor="#240000"
                         android:textSize="17sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -235,4 +246,5 @@
 
         </GridLayout>
     </ScrollView>
+
 </RelativeLayout>
