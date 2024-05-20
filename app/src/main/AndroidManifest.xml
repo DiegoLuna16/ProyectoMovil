@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,43 +15,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyARhFjekwOhrDC9_2cvjNTQEurnjZ8NuhA"
+            />
         <activity
-            android:name=".activies.CouponsDetailsActivity"
+            android:name=".activites.MapActivity"
             android:exported="false" />
         <activity
-            android:name=".activies.FetchActivity"
+            android:name=".activites.CouponsDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".activies.InsertionActivity"
+            android:name=".activites.FetchActivity"
             android:exported="false" />
         <activity
-            android:name=".activies.DatabaseActivity"
+            android:name=".activites.InsertionActivity"
             android:exported="false" />
         <activity
-            android:name=".activies.MyReservationsActivity"
+            android:name=".activites.DatabaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.MyReservationsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activies.ReservationActivity"
+            android:name=".activites.ReservationActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activies.DetailActivity"
+            android:name=".activites.DetailActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.ProyectoFinal" />
         <activity
-            android:name=".activies.SignUpActivity"
+            android:name=".activites.SignUpActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.HomeActivity" />
         <activity
-            android:name=".activies.LoginActivity"
+            android:name=".activites.LoginActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.ProyectoFinal" />
         <activity
-            android:name=".activies.MainActivity"
+            android:name=".activites.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.HomeActivity">
@@ -58,9 +69,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
     </application>
 

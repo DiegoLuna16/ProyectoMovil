@@ -1,4 +1,4 @@
-package com.example.proyectofinal.activies
+package com.example.proyectofinal.activites
 
 import android.content.Intent
 import android.os.Bundle
@@ -102,4 +102,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
+
+
 }

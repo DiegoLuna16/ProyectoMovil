@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.proyectofinal.activies.DetailActivity
+import com.example.proyectofinal.activites.DetailActivity
 import com.example.proyectofinal.models.Food
 import com.example.proyectofinal.adapters.FoodAdapter
 import com.example.proyectofinal.R
