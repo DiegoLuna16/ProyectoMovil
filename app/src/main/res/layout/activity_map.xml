@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    tools:context=".activites.MapActivity">
+
+    <TextView
+        android:id="@+id/textViewLocationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Localización"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtLatitud"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Latitud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocationName" />
+
+    <EditText
+        android:id="@+id/txtLongitud"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Longitud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLatitud" />
+
+    <fragment
+        android:id="@+id/mapa"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLongitud"
+        map:cameraZoom="10"
+        map:uiRotateGestures="true"
+        map:uiZoomControls="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Regresar"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/mapa"
+        tools:layout_editor_absoluteX="-16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
