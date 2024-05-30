@@ -1,4 +1,4 @@
-package com.example.proyectofinal.activites
+package com.example.proyectofinal.activities
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog

@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.example.proyectofinal.R
-import com.example.proyectofinal.activites.ReservationActivity
+import com.example.proyectofinal.activities.ReservationActivity
 
 class SettingsFragment : Fragment() {
     private var name: String? = null

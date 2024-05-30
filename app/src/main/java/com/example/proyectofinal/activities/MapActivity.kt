@@ -1,4 +1,4 @@
-package com.example.proyectofinal.activites
+package com.example.proyectofinal.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,7 +13,6 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.button.MaterialButton
-import com.google.firebase.auth.FirebaseAuth
 
 class MapActivity : AppCompatActivity(), OnMapReadyCallback,
     GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener {

@@ -1,4 +1,4 @@
-package com.example.proyectofinal.activites
+package com.example.proyectofinal.activities
 
 import android.os.Bundle
 import android.widget.Button

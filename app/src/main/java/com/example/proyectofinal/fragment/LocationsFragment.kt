@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.proyectofinal.models.Locations
 import com.example.proyectofinal.adapters.LocationsAdapter
 import com.example.proyectofinal.R
-import com.example.proyectofinal.activites.MapActivity
+import com.example.proyectofinal.activities.MapActivity
 
 class LocationsFragment : Fragment() {
 
